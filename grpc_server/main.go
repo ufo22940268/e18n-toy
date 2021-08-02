@@ -12,7 +12,7 @@ import (
 )
 
 const (
-	port = ":50051"
+	port = "localhost:50051"
 )
 
 // server is used to implement helloworld.GreeterServer.
@@ -27,6 +27,7 @@ func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloRe
 }
 
 func main() {
+	log.Println("grpc server started at localhost:50051")
 	lis, err := net.Listen("tcp", port)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
