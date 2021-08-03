@@ -19,7 +19,7 @@ spec:
           image: e13n_gateway
           imagePullPolicy: Never
           ports:
-          - containerPort: 8484
+            - containerPort: 8484
           env:
             - name: GRPC_ADDRESS
               value: "e13n-grpc-service:50051"
