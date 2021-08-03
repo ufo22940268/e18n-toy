@@ -53,6 +53,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", handler)
-	log.Print("Listen ----****10000----- on 8484")
+	log.Print("Listen on 8484")
 	http.ListenAndServe(":8484", nil)
 }

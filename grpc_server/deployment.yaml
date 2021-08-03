@@ -19,4 +19,4 @@ spec:
         image: e13n_grpc
         imagePullPolicy: Never
         ports:
-        - containerPort: 8484
+        - containerPort: 50051
